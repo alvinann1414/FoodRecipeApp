@@ -97,8 +97,10 @@ class RecipeEditFragment : Fragment() {
         val f = Recipe(
             id   = binding.txtId.text.toString().trim(),
             name = binding.edtName.text.toString().trim(),
+            ingredients = binding.edtIngred.text.toString().trim(),
+            steps = binding.edtSteps.text.toString().trim(),
             //price  = binding.edtPrice.text.toString().toDoubleOrNull() ?: 0.00,
-            //categoryId = (binding.spnGender.selectedItem.toString())[0].toString(),
+            categoryId = (binding.spnGender.selectedItem.toString())[0].toString(),
             // TODO: Photo
             photo = binding.imgPhoto.cropToBlob(300, 300)
         )
