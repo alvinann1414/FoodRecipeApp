@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_admin.xml"
+    app:startDestination="@id/recipeHome">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.foodrecipeapp.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.example.foodrecipeapp.ui.AddRecipeFragment"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" />
+    <fragment
+        android:id="@+id/recipeHome"
+        android:name="com.example.foodrecipeapp.ui.RecipeHome"
+        android:label="RecipeHome" />
+    <dialog
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.example.foodrecipeapp.ui.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" />
+    <fragment
+        android:id="@+id/viewRecipeFragment"
+        android:name="com.example.foodrecipeapp.ui.ViewRecipeFragment"
+        android:label="fragment_view_recipe"
+        tools:layout="@layout/fragment_view_recipe" />
+    <fragment
+        android:id="@+id/recipeEditFragment"
+        android:name="com.example.foodrecipeapp.ui.RecipeEditFragment"
+        android:label="fragment_recipe_edit"
+        tools:layout="@layout/fragment_recipe_edit" />
+    <fragment
+        android:id="@+id/recipeListEditFragment"
+        android:name="com.example.foodrecipeapp.ui.RecipeListEditFragment"
+        android:label="fragment_recipe_list_edit"
+        tools:layout="@layout/fragment_recipe_list_edit" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/homeFragment"
+            android:checkable="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/sellerProfileMain"
+            android:checkable="true"
+            android:icon="@drawable/ic_person"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/addStaffFragment"
+            android:checkable="true"
+            android:icon="@drawable/ic_addstaff"
+            android:title="Add Staff" />
+        <item
+            android:id="@+id/changePassFragment"
+            android:checkable="true"
+            android:icon="@drawable/ic_security"
+            android:title="Change Password" />
+
+    </group>
+
+</menu>
